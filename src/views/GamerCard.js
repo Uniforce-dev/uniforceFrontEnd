@@ -24,8 +24,8 @@ class GamerCard extends Component{
       // verso (hover)
       return(
         <div className="GamerCard" onMouseLeave={this.onClickFalse}>
-        <div className="Gamer-description">Niveau : {this.props.gamer.niveau}</div>
-        <div className="Gamer-description">Pseudo Joueur : {this.props.gamer.pseudoJoueur}</div>
+        <div className="Gamer-description">{this.props.gamer.pseudo}</div>
+        <div className="Gamer-description">{this.props.gamer.description}</div>
         </div>
       )
     } else {
@@ -34,9 +34,9 @@ class GamerCard extends Component{
         <div className="GamerCard" onMouseEnter={this.onClickTrue}>
           <div className="Gamer-shield">
             <div className="Gamer-photo">
-              <img src={require('../assets/img/logo_final.png')} alt="Photo du joueur" />
+              <img src={require(`../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
             </div>
-            <div className="Gamer-pseudo">{this.props.gamer.pseudo}</div>         
+            {/* <div className="Gamer-pseudo">{this.props.gamer.pseudo}</div>          */}
           </div>
         </div>
       )
