@@ -3,7 +3,7 @@
 
 html, body {
   height: 100vh;
-  background-color: black;
+  background-color:black;
 }
 
 .test {
@@ -120,35 +120,6 @@ nav {
 
 .Nav-links li:hover{
   cursor: pointer;
-}
-
-/* ******** HOME ******** */
-
-.Home {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80%;
-  padding: 50px 50px;
-}
-
-.Twitch {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  display: inline-block;
-  box-shadow: 5px 5px 20px #d73983, -2px -2px 20px  #3a98d9;
-}
-
-#twitch-embed {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-
 }
 
 /* ******** GAMERS ******** */
