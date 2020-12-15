@@ -23,6 +23,12 @@ class Menu extends Component{
           >
             <li>Uni-force Team</li>
           </NavLink>
+          <NavLink
+            to='/association' className="Nav-link"
+            activeClassName="Nav-link--active"
+          >
+            <li>Uni-force association</li>
+          </NavLink>
         </ul> 
       </nav>
     )

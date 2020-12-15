@@ -5,6 +5,7 @@ import Header from './views/Header'
 import Home from './views/Home'
 import UniforceTeam from './views/UniforceTeam'
 import Footer from './views/Footer'
+import UniforcePresentation from './views/UniforcePresentation'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends Component{
@@ -17,7 +18,8 @@ class App extends Component{
           {/* <p>{this.state.webpagedata}</p> */}
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/team" component={UniforceTeam} />            
+            <Route path="/team" component={UniforceTeam} />
+            <Route path="/association" component={UniforcePresentation}/>         
           </Switch>
           <Footer/> 
         </div>

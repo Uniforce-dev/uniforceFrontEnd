@@ -1,0 +1,10 @@
+.text{
+    width: 50vw;
+    color: white;
+    text-align: justify;
+    
+}
+.text p{
+
+    padding-top: 20px;
+}
