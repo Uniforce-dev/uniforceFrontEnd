@@ -9,7 +9,6 @@ class Home extends Component{
   }
 
   componentDidMount() {
-    console.log('home mounted')
     let embed;
     const script = document.createElement('script')
     script.setAttribute(
