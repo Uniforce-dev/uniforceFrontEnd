@@ -4,12 +4,12 @@ const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js'
 
 class Home extends Component{ 
 
-  constructor () {
-    super()
-  }
+  // constructor () {
+  //   super()
+  // }
 
   componentDidMount() {
-    console.log('home mounted')
+    // console.log('home mounted')
     let embed;
     const script = document.createElement('script')
     script.setAttribute(
@@ -23,9 +23,14 @@ class Home extends Component{
           channel: 'uniforce_tv',
           theme: 'dark',
           muted: true
+      })
+      // embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+      //   var player = embed.getPlayer();
+      //   player.play();
+      //   console.log(player)
+      // })
     })
-  })
-        document.body.appendChild(script)
+    document.body.appendChild(script)
   }
 
   render () {
