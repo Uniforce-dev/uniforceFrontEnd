@@ -3,6 +3,41 @@ import "../assets/jss/GamerCard.css"
 
 class GamerCard extends Component{  
 
+  render() {
+    return (
+
+    
+      <div class="box">
+      <div class="box-inner">
+        <div class="box-front">
+          <div className="gamer-card">
+            <div className="card-title">
+              {this.props.gamer.pseudo}
+            </div>
+            <div className="gamer-shield">
+              <div className="gamer-photo">
+                <img src={require(`../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
+              </div>
+              {/* <div className="gamer-pseudo">{this.props.gamer.pseudo}</div>          */}
+            </div>
+          </div>
+        </div>
+        <div class="box-back">
+          <div className="gamer-card">
+            <div className="gamer-details">
+              <div className="card-title">{this.props.gamer.pseudo}</div>
+              <div className="gamer-description">{this.props.gamer.description}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      )
+  }
+
+  // KEEP CODE FOR JAVASCRIPT ACTIONS
+
+
   // constructor() {
   //   super()
   //   this.onClickTrue = this.onClickTrue.bind(this);
@@ -19,7 +54,7 @@ class GamerCard extends Component{
   //   this.setState({ showMe : false })
   // }
 
-  render () {
+  //render () {
     // if(this.state.showMe){
     //   // verso (hover)
     //   return(
@@ -41,36 +76,8 @@ class GamerCard extends Component{
     //     </div>
     //   )
     // }  
-    return (
-
-    
-    <div class="box">
-    <div class="box-inner">
-      <div class="box-front">
-        <div className="gamer-card">
-          <div className="card-title">
-            {this.props.gamer.pseudo}
-          </div>
-          <div className="gamer-shield">
-            <div className="gamer-photo">
-              <img src={require(`../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
-            </div>
-            {/* <div className="gamer-pseudo">{this.props.gamer.pseudo}</div>          */}
-          </div>
-        </div>
-      </div>
-      <div class="box-back">
-        <div className="gamer-card">
-          <div className="gamer-details">
-            <div className="card-title">{this.props.gamer.pseudo}</div>
-            <div className="gamer-description">{this.props.gamer.description}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    )
-  }
+   
+  //}
 }
 
 export default GamerCard
