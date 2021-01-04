@@ -28,7 +28,7 @@ const gamersInfos = [
         firstname: "Lola",
         lastname: "none",
         age: 18,
-        description: "Elle est forte à LOL, Celest et Hades. A part jouer, elle aime dormir et faire les boutiques",
+        description: "Elle est forte à LOL, Celeste et Hades. A part jouer, elle aime dormir et faire les boutiques",
         favGame: "LOL, Celest et Hades",
         photo:'Lola.jpg'
     },
