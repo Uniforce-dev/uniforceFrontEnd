@@ -29,6 +29,13 @@ class Menu extends Component{
           >
             <li>Uni-force association</li>
           </NavLink>
+          <NavLink
+            to='/loginPage'>
+            <li>
+              connexion
+              {/* insérer une icone de connexion */}
+            </li>
+          </NavLink>
         </ul> 
       </nav>
     )

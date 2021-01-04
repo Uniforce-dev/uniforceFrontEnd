@@ -34,6 +34,7 @@ class Home extends Component{
           <div id="twitch-embed"></div>
         </div>
       </div>
+    
     )
   }
 }

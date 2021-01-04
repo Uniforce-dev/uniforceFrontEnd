@@ -6,6 +6,7 @@ import Home from './views/Home'
 import UniforceTeam from './views/UniforceTeam'
 import Footer from './views/Footer'
 import UniforcePresentation from './views/UniforcePresentation'
+import LoginPage from './views/LoginPage'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends Component{
@@ -19,10 +20,12 @@ class App extends Component{
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/team" component={UniforceTeam} />
-            <Route path="/association" component={UniforcePresentation}/>         
+            <Route path="/association" component={UniforcePresentation}/> 
+            <Route path="/loginPage" component={LoginPage}/>
           </Switch>
           <Footer/> 
         </div>
+
       </Router>      
     )
   }
