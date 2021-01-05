@@ -15,19 +15,19 @@ class Menu extends Component{
             to='/' className="Nav-link" exact
             activeClassName="Nav-link--active"
           >
-            <li>Uni-force Tv</li>
+            <li>UNI-FORCE tv</li>
           </NavLink>
           <NavLink
             to='/team' className="Nav-link"
             activeClassName="Nav-link--active"
           >
-            <li>Uni-force Team</li>
+            <li>STREAMERS</li>
           </NavLink>
           <NavLink
             to='/association' className="Nav-link"
             activeClassName="Nav-link--active"
           >
-            <li>Uni-force association</li>
+            <li>ASSOCIATION</li>
           </NavLink>
         </ul> 
       </nav>

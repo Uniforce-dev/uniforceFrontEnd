@@ -1,31 +1,32 @@
-import React, { Component } from 'react'
-import './assets/jss/App.css'
-import ComingSoon from './views/ComingSoon'
-import Header from './views/Header'
-import Home from './views/Home'
-import UniforceTeam from './views/UniforceTeam'
-import Footer from './views/Footer'
-import UniforcePresentation from './views/UniforcePresentation'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { Component } from "react";
+import "./assets/jss/App.css";
+import ComingSoon from "./views/ComingSoon";
+import LeftMenu from "./views/LeftMenu";
+import Home from "./views/Home";
+import UniforceTeam from "./views/UniforceTeam";
 
-class App extends Component{
-  render () {   
-    return(
+import UniforcePresentation from "./views/UniforcePresentation";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+class App extends Component {
+  render() {
+    return (
       <Router>
         <div className="App">
           {/* <ComingSoon></ComingSoon> */}
-          <Header/>
+          <LeftMenu />
           {/* <p>{this.state.webpagedata}</p> */}
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/team" component={UniforceTeam} />
-            <Route path="/association" component={UniforcePresentation}/>         
-          </Switch>
-          <Footer/> 
+          <div className="app-content">
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/team" component={UniforceTeam} />
+              <Route path="/association" component={UniforcePresentation} />
+            </Switch>            
+          </div>
         </div>
-      </Router>      
+      </Router>
     )
   }
 }
 
-export default App
+export default App;
