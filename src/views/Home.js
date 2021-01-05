@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import "../assets/jss/Home.css"
 const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js'
+const YOUTUBE_URL = 'https://www.youtube.com/iframe_api'
 
 class Home extends Component{ 
 
@@ -10,13 +11,14 @@ class Home extends Component{
 
   componentDidMount() {
     // console.log('home mounted')
+    // TWITCH
     let embed;
-    const script = document.createElement('script')
-    script.setAttribute(
+    const twScript = document.createElement('script')
+    twScript.setAttribute(
       'src',
       EMBED_URL
     )
-    script.addEventListener('load', () => {
+    twScript.addEventListener('load', () => {
       embed = new window.Twitch.Embed("twitch-embed", {
           width: '100%',
           height: '100%',
@@ -24,24 +26,40 @@ class Home extends Component{
           theme: 'dark',
           muted: true
       })
+      
+      // GET INFOS TO DISPLAY TWITCH OR YOUTUBE if no stream or replay available on TWITCH
+      // getChannel() Returns the channel’s name. Works only for live streams, not VODs.
+      // getVideo() Returns the video ID. Works only for VODs, not live streams.
+      // console.log('embed', embed, embed.getVideo(), embed.getChannel()) 
+      
+      // CAN LISTEN TO EVENTS
       // embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
       //   var player = embed.getPlayer();
+      // console.log(player)
       //   player.play();
-      //   console.log(player)
       // })
     })
-    document.body.appendChild(script)
+    document.body.appendChild(twScript)
   }
 
   render () {
     return(
-      <div className="Home">
-        <div className="Twitch">
+      <div className="home">
+        <div className="twitch">
           <div id="twitch-embed"></div>
         </div>
+        <div className="youtube">          
+          <div className="youtube-embed">
+            <iframe src="http://www.youtube.com/embed/videoseries?list=UUfo3T5OUV2VMoyLqtrQR33g"></iframe>
+          </div>   
+        </div>
+        
       </div>
     )
   }
 }
 
 export default Home
+
+
+
