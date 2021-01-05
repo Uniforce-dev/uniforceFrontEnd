@@ -7,8 +7,8 @@ class GamerCard extends Component{
     return (
 
     
-      <div class="box">
-      <div class="box-inner">
+      <div className="box">
+      <div className="box-inner">
         <div class="box-front">
           <div className="gamer-card">
             <div className="card-title">
@@ -22,7 +22,7 @@ class GamerCard extends Component{
             </div>
           </div>
         </div>
-        <div class="box-back">
+        <div className="box-back">
           <div className="gamer-card">
             <div className="gamer-details">
               <div className="card-title">{this.props.gamer.pseudo}</div>

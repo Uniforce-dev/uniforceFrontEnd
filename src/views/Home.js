@@ -45,9 +45,11 @@ class Home extends Component{
   render () {
     return(
       <div className="home">
+        <h2>LE STREAM</h2>
         <div className="twitch">
           <div id="twitch-embed"></div>
         </div>
+        <h2>LA CHAINE YOUTUBE</h2>
         <div className="youtube">          
           <div className="youtube-embed">
             <iframe src="http://www.youtube.com/embed/videoseries?list=UUfo3T5OUV2VMoyLqtrQR33g"></iframe>
