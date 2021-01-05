@@ -67,7 +67,7 @@ h1 {
     padding-top: 200px;
     /* background-image: url(../img/fond.jpg);
     background-size: 100%; */
-    background: linear-gradient(#3a97d9d0, #d73983d0);
+    background: linear-gradient(to top right, black, #3a97d9d0, #d73983d0);
 }
 
 
@@ -125,10 +125,11 @@ nav {
     /* margin: 0 30px; */
     list-style: none;
     text-decoration: none;
-    /* font-weight: 600;  */
+    font-weight: 600; 
     font-size: 18px;
     /* color: #3a98d9; */
     color: #e8eaeb;
+
 }
 
 .Nav-link--active {
