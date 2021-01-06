@@ -1,10 +1,24 @@
-.text{
-    width: 50vw;
-    color: white;
-    text-align: justify;
+.uniforce-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+
     
 }
-.text p{
 
-    padding-top: 20px;
+.uniforce-presentation h2 {
+    margin: 20px 10px;
+    color: #3a98d9;
+    text-transform: uppercase;
+    align-self: flex-start;
+  } 
+
+.uniforce-presentation p{
+    width: 50%;
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
 }

@@ -5,8 +5,8 @@ class UniforcePresentation extends Component{
     
     render(){
         return(
-        <div className="text">
-            <h1>L'association Uni-Force</h1>
+        <div className="uniforce-presentation">
+            <h2>L'association Uni-Force</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Odio ut sem nulla pharetra diam sit. Nunc sed velit dignissim sodales ut. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. 
                 Cras ornare arcu dui vivamus arcu felis. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. 
