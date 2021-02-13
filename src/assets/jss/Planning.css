@@ -1,0 +1,8 @@
+.planning {
+  display: flex;
+  flex-direction: column;
+}
+
+.hebdo-plan {
+  display: flex;
+}

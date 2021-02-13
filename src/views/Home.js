@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
 import "../assets/jss/Home.css"
+import Planning from "../views/Planning"
 import Footer from "./Footer";
 const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js'
 
@@ -10,7 +11,6 @@ class Home extends Component{
   }
 
   componentDidMount() {
-    console.log('home mounted')
     let embed;
     const script = document.createElement('script')
     script.setAttribute(
@@ -62,6 +62,7 @@ class Home extends Component{
             <iframe src="http://www.youtube.com/embed/videoseries?list=UUfo3T5OUV2VMoyLqtrQR33g"></iframe>
           </div>   
         </div>
+        <Planning />
         <Footer />
       </div>
     )
