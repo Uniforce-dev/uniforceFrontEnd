@@ -6,14 +6,14 @@ class LeftMenu extends Component {
   render() {
     return (
       <div className="left-menu">
-        <div className="Logo-contain">
+        <div className="logo-content">
           <Animated
             animationIn="flipInX"
             animationOut="fadeOut"
             isVisible={true}
           >
             <img
-              className="Logo"
+              className="logo"
               src={require("../assets/img/logo_neon.svg")}
               alt="Logo"
             />

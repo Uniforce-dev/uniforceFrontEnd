@@ -1,5 +1,5 @@
 import React, { Component} from "react"
-import "../assets/jss/GamerCard.css"
+import "../../assets/jss/GamerCard.css"
 
 class GamerCard extends Component{  
 
@@ -9,14 +9,14 @@ class GamerCard extends Component{
     
       <div className="box">
       <div className="box-inner">
-        <div class="box-front">
+        <div className="box-front">
           <div className="gamer-card">
             <div className="card-title">
               {this.props.gamer.pseudo}
             </div>
             <div className="gamer-shield">
               <div className="gamer-photo">
-                <img src={require(`../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
+                <img src={require(`../../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
               </div>
               {/* <div className="gamer-pseudo">{this.props.gamer.pseudo}</div>          */}
             </div>
@@ -69,7 +69,7 @@ class GamerCard extends Component{
     //     <div className="gamer-card" onMouseEnter={this.onClickTrue}>
     //       <div className="gamer-shield">
     //         <div className="gamer-photo">
-    //           <img src={require(`../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
+    //           <img src={require(`../../assets/img/streamers/${this.props.gamer.photo}`)} alt="Photo du joueur" />
     //         </div>
     //         {/* <div className="gamer-pseudo">{this.props.gamer.pseudo}</div>          */}
     //       </div>

@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 // import "../assets/jss/UniforceTeam.css"
-import GamerCard from "../views/GamerCard"
-import gamersInfos from "../datas/gamersInfos"
+import GamerCard from "./GamerCard"
+import gamersInfos from "../../datas/gamersInfos"
 
 
 class UniforceTeam extends Component{  

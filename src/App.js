@@ -3,7 +3,7 @@ import "./assets/jss/App.css";
 import ComingSoon from "./views/ComingSoon";
 import LeftMenu from "./views/LeftMenu";
 import Home from "./views/Home";
-import UniforceTeam from "./views/UniforceTeam";
+import UniforceTeam from "./views/streamers/UniforceTeam";
 
 import UniforcePresentation from "./views/UniforcePresentation";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
