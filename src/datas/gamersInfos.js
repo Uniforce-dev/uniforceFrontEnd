@@ -1,4 +1,4 @@
-const gamersInfos = [
+export const gamersInfos = [
     {
         id: 1,
         pseudo: "NACEAS",

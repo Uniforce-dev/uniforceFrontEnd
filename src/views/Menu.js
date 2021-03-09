@@ -30,7 +30,7 @@ class Menu extends Component{
             <li>Uni-force association</li>
           </NavLink>
           <NavLink
-            to='/loginPage'>
+            to='/back'>
             <li>
               connexion
               {/* insérer une icone de connexion */}
