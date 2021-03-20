@@ -1,11 +1,11 @@
 import React, { Component} from 'react'
-import '../assets/jss/LoginPage.css'
-import authProvider from '../datas/authProvider.js';
+import '../../assets/jss/LoginPage.css'
+import authProvider from '../../datas/authProvider.js';
 import { Admin, Resource } from 'react-admin';
 import simpleRestProvider from 'ra-data-simple-rest';
-import dataProvider from '../datas/dataProvider.js'
-import { gamersInfos } from '../datas/gamersInfos.js';
-import { makeStyles } from '@material-ui/core/styles';
+import dataProvider from '../../datas/dataProvider.js'
+import { gamersInfos } from '../../datas/gamersInfos.js';
+
 class Back extends Component {
   constructor(){
     super()

@@ -6,7 +6,7 @@ import Home from './views/Home'
 import UniforceTeam from './views/UniforceTeam'
 import Footer from './views/Footer'
 import UniforcePresentation from './views/UniforcePresentation'
-import back from './views/Back'
+import back from './views/back/Back'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
