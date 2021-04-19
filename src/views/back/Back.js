@@ -1,21 +1,21 @@
 import React, { Component} from 'react'
-import '../assets/jss/LoginPage.css'
+import '../../assets/jss/LoginPage.css'
 
 import { Admin, Resource, ListGuesser } from 'react-admin';
-import authProvider from '../providers/authProvider.js';
-import dataProvider from '../datas/dataProvider.js'
+import authProvider from '../../providers/authProvider.js';
+import dataProvider from '../../datas/dataProvider.js'
 import jsonServerProvider from 'ra-data-json-server';
 import { fetchUtils } from 'ra-core';
 import simpleRestProvider from 'ra-data-simple-rest';
 
 
 
-import { gamersInfos } from '../datas/gamersInfos.js';
+import { gamersInfos } from '../../datas/gamersInfos.js';
 import { makeStyles } from '@material-ui/core/styles';
 
-import {UsersList} from "./Users";
-import {PostsList} from "./Posts";
-import {EventsList} from "./Events";
+import {UsersList} from "../Users";
+import {PostsList} from "../Posts";
+import {EventsList} from "../Events";
 
 
 
