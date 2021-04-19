@@ -5,7 +5,7 @@ import LeftMenu from "./views/LeftMenu";
 import Home from "./views/Home";
 import UniforceTeam from "./views/streamers/UniforceTeam";
 
-import UniforcePresentation from "./views/UniforcePresentation";
+import UniforcePresentation from "./views/presentation/UniforcePresentation";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {

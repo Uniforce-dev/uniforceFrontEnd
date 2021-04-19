@@ -47,9 +47,9 @@ h2 {
     text-transform: uppercase;
 }
 
-.stream-title {
+/* .stream-title {
     margin-top: 90px;
-}
+} */
 
 .anchor{
     height: 80px; /*same height as header*/
@@ -85,6 +85,7 @@ h2 {
 .left-menu {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* align-items: flex-end; */
   width: 210px;
@@ -114,16 +115,9 @@ h2 {
   /* height: 100%; */
 }
 
-.logo {
-  /* position: absolute; */
-  /* top negative waiting for good sized logo */
-  /* top: -20px; */
-  /* left: 0; */
+.logo { 
   min-width: 200px;
   max-width: 250px;
-  /* width: 100%;
-    height: 100%; */
-  /* height: auto; */
   transition: 0.25s;
 }
 
@@ -131,7 +125,6 @@ h2 {
 
 nav {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   width: 100%;
   height: 100vh;
@@ -155,23 +148,17 @@ nav {
   font-weight: 600;
   font-size: 18px;
   color: #3a98d9;
-  /* width: 100%; */
-  /* border-top: 1px solid #3a98d9; */
   border-top: 1px solid #d73983;
-  /* margin: 0 30px; */
-  /* text-align: center; */
   text-shadow: 2px 2px 5px black;
   transition: 0.25s;
 }
 .Nav-link:last-child {
-  /* border-bottom: 1px solid #3a98d9; */
   border-bottom: 1px solid #d73983;
 }
 
 .Nav-link--active {
   color: white;
   text-shadow: 1px 1px 2px #3a98d9;
-  /* color: rgb(83, 250, 236); */
 }
 
 .Nav-link:hover {
@@ -182,6 +169,21 @@ nav {
 
 .Nav-links li:hover {
   cursor: pointer;
+}
+
+/* ******** SOCIAL NETWORKS ******** */
+
+.icons {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.icons img {
+  width: 20px;
+  height: auto;
+  margin: 10px;
 }
 
 /* ******** APP CONTENT ******** */
@@ -195,12 +197,12 @@ nav {
   margin-left: 210px;
   overflow-y: auto;
   background-color: rgba(15, 15, 15, 0.9);
-  scrollbar-width: none;
-  
+  scrollbar-width: none;  
 }
 
 .app-content::-webkit-scrollbar {
   display: none;}
+
 /* ******** GAMERS ******** */
 
 .uniforce-team {
@@ -237,19 +239,21 @@ nav {
   margin-top: 20px;
 }
 
-.Icons {
-  bottom: 0;
+.footer-blocks {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.Icons img {
-  width: 20px;
-  height: auto;
-  margin: 10px;
+.footer-blocks p {
+  padding: 20px;
 }
 
 /* ******** MEDIA QUERIES ******** */
+
+@media (max-width:800px) {
+}
 
 /* @media (max-width:800px) { */
 /* .Logo-contain {

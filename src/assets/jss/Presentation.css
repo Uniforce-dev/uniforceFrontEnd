@@ -1,24 +1,58 @@
-.uniforce-presentation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 50px;
-
-    
+.uniforce-presentation {
+  display: flex;
+  width: 100%;
+  background-image: url("../img/logo_neon.svg");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.uniforce-presentation h2 {
-    /* margin: 20px 10px; */
-    color: #3a98d9;
-    text-transform: uppercase;
-    align-self: flex-start;
-  } 
+.bg-opacity {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.3);
+}
 
-.uniforce-presentation p{
-    width: 50%;
-    padding-top: 50px;
-    color: white;
-    font-size: 20px;
-    text-align: justify;
+.asso-values {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid#3a98d9;
+  border-radius: 10px;
+  background: #2f2f2f94;
+  opacity: 0.7;
+  width: 400px;
+  height: 400px;
+  transition: 0.25s;
+}
+
+.asso-values:hover {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid#3a98d9;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.644);
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+  }
+
+.uniforce-presentation h2 {
+  margin: 50px 0 20px 0;
+  color: #d73983;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.uniforce-presentation p {
+  padding-top: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: justify;
 }

@@ -34,7 +34,7 @@ class Planning extends Component {
         this.setState({
           events: data["hydra:member"],
         });
-        console.log("this.state.events", this.state.events);
+        // console.log("this.state.events", this.state.events);
       });
   }
 
@@ -61,7 +61,7 @@ class Planning extends Component {
 
       //  COMMENCER LE LUNDI (pourrait être mis dans la méthode formatedWeek éventuellement)
       if (dayNb === 0) { // cas particulier si currentday est un dimanche
-        console.log('here', dayNb)
+        // console.log('here', dayNb)
           idate.setDate(currentDay.getDate() + (i - 6));
       } else {
       //   console.log("idate", idate, i, dayNb, i - (dayNb - 1));
@@ -145,17 +145,17 @@ class Planning extends Component {
   }
 
   render() {
-    console.log("events in render", this.state.events);
+    // console.log("events in render", this.state.events);
     let weekPlan = this.state.formatedWeek.map((day) => {
       let dayEvents = this.state.events.filter((event) => {
         let eventDate = new Date(event.date);
-        console.log(eventDate.toDateString() === day.date.toDateString());
-        console.log("dates", day.date.toDateString(), eventDate.toDateString());
+        // console.log(eventDate.toDateString() === day.date.toDateString());
+        // console.log("dates", day.date.toDateString(), eventDate.toDateString());
         if (eventDate.toDateString() === day.date.toDateString()) {
           return event;
         }
       });
-      console.log("dayEvents", dayEvents);
+      // console.log("dayEvents", dayEvents);
       if (dayEvents.length > 0)
         return {
           ...day,
@@ -163,7 +163,7 @@ class Planning extends Component {
         };
       else return { ...day, events: [] };
     });
-    console.log("weekPlan", weekPlan);
+    // console.log("weekPlan", weekPlan);
     const formatedDays = weekPlan.map((day) => (
       <DayPlan key={day.id} day={day} />
     ));
@@ -174,10 +174,8 @@ class Planning extends Component {
         <div className="planning-header">
           <div className="" ></div>
           <div className="buttons">
-            <div onClick={this.goPreviousWeek}>PREVIOUS</div>
-            <div onClick={this.goNextWeek}>NEXT</div>
-            {/* <button onClick={this.goPreviousWeek}>PREVIOUS</button>
-          <button onClick={this.goNextWeek}>NEXT</button> */}
+            <div className="button" onClick={this.goPreviousWeek}>PREVIOUS</div>
+            <div className="button" onClick={this.goNextWeek}>NEXT</div>
           </div>
         </div>
         <div className="hebdo-plan">{formatedDays}</div>

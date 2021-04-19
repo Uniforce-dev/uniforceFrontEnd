@@ -20,6 +20,12 @@ class LeftMenu extends Component {
           </Animated>
         </div>
         <Menu />
+        <div>
+        <div className="icons">
+            <a href="https://twitter.com/UniForceTV"><img src={require('../assets/img/icon/twitter.svg')} alt="logo twitter"/></a>
+            <a href="https://instagram.com/tvuniforce"><img src={require('../assets/img/icon/instagram.svg')} alt="logo instagram"/></a>
+        </div>
+        </div>
       </div>
     );
   }
