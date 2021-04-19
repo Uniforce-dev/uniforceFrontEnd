@@ -21,6 +21,9 @@ import {EventsList} from "./Events";
 
 
 
+// import authProvider from '../../datas/authProvider.js';
+// import dataProvider from '../../datas/dataProvider.js'
+// import { gamersInfos } from '../../datas/gamersInfos.js';
 
 class Back extends Component {
   constructor(){
