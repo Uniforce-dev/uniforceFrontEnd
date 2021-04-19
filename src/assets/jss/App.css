@@ -86,25 +86,18 @@ h2 {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: flex-end; */
   width: 210px;
   height: 100vh;
   max-height: 100vh;
   padding-top: 190px;
-  /* background-image: url(../img/fond.jpg);
-    background-size: 100%; */
-  /* background: linear-gradient(to top right, black, #3A98D9d0, #d73983d0); */
-  /* background: linear-gradient(to top right, #d73983d0, #14044e, #3A98D9d0); */
-  /* border-right: 1px solid rgb(83, 250, 236); */
   border-right: 1px solid #d73983;
-  /* box-shadow: 1px 1px 4px #d73983; */
 }
+
+
 
 /* ******** LOGO ******** */
 
 .logo-content {
-  /* z-index: 1; */
   position: absolute;
   top: -30px;
   left: -5px;
@@ -174,9 +167,11 @@ nav {
 /* ******** SOCIAL NETWORKS ******** */
 
 .icons {
-  bottom: 0;
+  position: absolute;
+  bottom: 10px;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 30px;
 }
 
