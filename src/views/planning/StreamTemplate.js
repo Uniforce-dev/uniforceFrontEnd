@@ -1,27 +1,32 @@
 import React, { Component } from "react";
 
 class StreamTemplate extends Component {
-  //   constructor() {
-  //     super();
-  //     // this.getCurrentWeek = this.getCurrentWeek.bind(this);
-  //     this.state = {
-  //       currentWeek: [],
-  //       // gamersList: []
-  //       // gamersList: gamersInfos
-  //     };
-  //   }
+  constructor(){
+    super()
+    this.state = {
+      streamer : "",
+    }
+  }
 
+  componentDidMount(){
+    const event = this.props.event
+    if(event){
+      this.setState({
+        streamer : event.streamer
+      })
+    }
+  }
   render() {
     return (
-      <div className="stream-template">
-        {/* <div className="date">
-            <p>{this.props.day.name}</p>
-            <p>{this.props.day.number}</p>
-            {this.props.day.month}
-          </div> */}
+      <div className="stream-template"  style={{
+        backgroundImage: `url(${require(`../../assets/img/draws/${this.state.streamer}_Web_Tv_Site.png`)})`,
+      }}>
         <div className="live-tag">LIVE!</div>
-        <div className="streamer">
-          <h3>{this.props.event.streamer}</h3>
+        <div className="hour">
+          <h3>{this.props.event.hour}</h3>
+        </div>
+        <div className="game">
+          <h3>{this.props.event.game}</h3>
         </div>
       </div>
     );

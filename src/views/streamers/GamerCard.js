@@ -35,7 +35,7 @@ class GamerCard extends Component{
       )
   }
 
-  // KEEP CODE FOR JAVASCRIPT ACTIONS
+  // KEEP CODE EXAMPLE FOR JAVASCRIPT ACTIONS
 
 
   // constructor() {
