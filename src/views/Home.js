@@ -51,7 +51,6 @@ class Home extends Component {
     //   var player = embed.getPlayer();
     //   player.play();
     // });
-
   } // GET INFOS TO DISPLAY TWITCH OR YOUTUBE if no stream or replay available on TWITCH
   // getChannel() Returns the channel’s name. Works only for live streams, not VODs.
   // getVideo() Returns the video ID. Works only for VODs, not live streams.
@@ -70,20 +69,16 @@ class Home extends Component {
   // }
 
   render() {
-     if (this.state.isLive) {
+    if (this.state.isLive) {
       // Stream TWITCH is Live
       return (
         <div className="home">
           <HomeHeader />
           <span className="anchor" id="id-stream"></span>
           <div className="home-stream">
-            <div className="demo-stream">
-              <h2 className="stream-title">LE STREAM</h2>
-              {/* demo with stream full page or not */}
-              <p className="button-demo" onClick={this.onClickFalse}>
-                demo live/no live
-              </p>
-            </div>
+            <h2 className="stream-title" onClick={this.onClickFalse}>
+              LE STREAM
+            </h2>
             <div className="twitch">
               <div id="twitch-embed"></div>
             </div>
@@ -110,13 +105,9 @@ class Home extends Component {
           <div className="home-videos" noLive={true}>
             <span className="anchor" id="id-stream"></span>
             <div className="home-stream">
-              <div className="demo-stream">
-                <h2 className="stream-title">LE STREAM</h2>
-                {/* demo with stream full page or not */}
-                <p className="button-demo" onClick={this.onClickTrue}>
-                  demo live/no live
-                </p>
-              </div>
+              <h2 className="stream-title" onClick={this.onClickTrue}>
+                LE STREAM
+              </h2>
               <div className="twitch">
                 <div id="twitch-embed"></div>
               </div>

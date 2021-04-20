@@ -47,10 +47,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/* .stream-title {
-    margin-top: 90px;
-} */
-
 .anchor{
     height: 80px; /*same height as header*/
     margin-top: -80px; /* same height as header */
