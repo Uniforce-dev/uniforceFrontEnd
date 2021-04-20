@@ -102,7 +102,7 @@ class Home extends Component {
       return (
         <div className="home">
           <HomeHeader />
-          <div className="home-videos" noLive={true}>
+          <div className="home-videos">
             <span className="anchor" id="id-stream"></span>
             <div className="home-stream">
               <h2 className="stream-title" onClick={this.onClickTrue}>

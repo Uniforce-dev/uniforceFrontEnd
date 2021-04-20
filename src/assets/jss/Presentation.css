@@ -19,11 +19,14 @@
 .asso-values {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 20px;
   margin: 20px;
-  border: 1px solid#3a98d9;
+  border: 1px solid transparent;
   border-radius: 10px;
   background: #2f2f2f94;
+  box-shadow: 1px -1px 20px #3a98d9, -1px 1px 20px #d73983, inset 1px 1px 10px black, inset -1px -1px 10px black;
   opacity: 0.7;
   width: 400px;
   height: 400px;

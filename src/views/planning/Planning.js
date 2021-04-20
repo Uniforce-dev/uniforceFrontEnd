@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DayPlan from "./DayPlan";
 import "../../assets/jss/Planning.css";
+import eventsList from "../../datas/eventsData"
 
 class Planning extends Component {
   constructor() {
@@ -10,32 +11,23 @@ class Planning extends Component {
     this.state = {
       currentWeek: [],
       formatedWeek: [],
-      events: [],
+      events: eventsList,
     };
   }
 
-  // componentDidMount(){
-  //   fetch("http://localhost:8000/team", {
-  //         method:'GET'
-  //     }).then(res => res.json()).then(data => {
-  //       this.setState({
-  //         gamersList: data
-  //       })
-  //   })
-  // }
-
   componentDidMount() {
     this.setState({ currentWeek: this.getCurrentWeek() });
-    fetch("http://localhost:8000/api/events", {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({
-          events: data["hydra:member"],
-        });
-        // console.log("this.state.events", this.state.events);
-      });
+
+  // CALL LOCAL BACK END
+  //   fetch("http://localhost:8000/api/events", {
+  //     method: "GET",
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       this.setState({
+  //         events: data["hydra:member"],
+  //       });
+  //     });
   }
 
   getCurrentWeek() {
@@ -61,13 +53,10 @@ class Planning extends Component {
 
       //  COMMENCER LE LUNDI (pourrait être mis dans la méthode formatedWeek éventuellement)
       if (dayNb === 0) { // cas particulier si currentday est un dimanche
-        // console.log('here', dayNb)
           idate.setDate(currentDay.getDate() + (i - 6));
       } else {
-      //   console.log("idate", idate, i, dayNb, i - (dayNb - 1));
         idate.setDate(currentDay.getDate() + (i - (dayNb - 1)));
       }
-
       currentWeek[i] = idate;
     }
 
@@ -98,13 +87,13 @@ class Planning extends Component {
 
   formatWeek(week) {
     let daysOfWeek = {
-      0: "Dimanche",
-      1: "Lundi",
-      2: "Mardi",
-      3: "Mercredi",
-      4: "Jeudi",
-      5: "Vendredi",
-      6: "Samedi",
+      0: "DIM",
+      1: "LUN",
+      2: "MAR",
+      3: "MER",
+      4: "JEU",
+      5: "VEN",
+      6: "SAM",
     };
 
     let months = {
@@ -124,13 +113,10 @@ class Planning extends Component {
 
     this.setState({
       formatedWeek: week.map((day) => {
-        // console.log('events in format', this.state.events)
         // // add events to each day
         // let dayEvents = this.state.events.filter((event) => {
-        //   console.log('day', day, event.date)
         //   return event
         // })
-        // console.log(dayEvents)
         return {
           id: `${week.indexOf(
             day
@@ -145,17 +131,13 @@ class Planning extends Component {
   }
 
   render() {
-    // console.log("events in render", this.state.events);
     let weekPlan = this.state.formatedWeek.map((day) => {
-      let dayEvents = this.state.events.filter((event) => {
-        let eventDate = new Date(event.date);
-        // console.log(eventDate.toDateString() === day.date.toDateString());
-        // console.log("dates", day.date.toDateString(), eventDate.toDateString());
+      let dayEvents = this.state.events.filter((event) => {      
+        let eventDate = new Date(event.date);     
         if (eventDate.toDateString() === day.date.toDateString()) {
           return event;
         }
       });
-      // console.log("dayEvents", dayEvents);
       if (dayEvents.length > 0)
         return {
           ...day,
@@ -163,7 +145,7 @@ class Planning extends Component {
         };
       else return { ...day, events: [] };
     });
-    // console.log("weekPlan", weekPlan);
+
     const formatedDays = weekPlan.map((day) => (
       <DayPlan key={day.id} day={day} />
     ));

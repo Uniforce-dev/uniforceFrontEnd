@@ -24,7 +24,7 @@ class UniforcePresentation extends Component {
           <div class="asso-values">
             <h2>Objectifs</h2>
             <p>
-              Objectifs : divertir, rassembler et partager notre passion du jeu
+              Divertir, rassembler et partager notre passion du jeu
               vidéo !
             </p>
           </div>
