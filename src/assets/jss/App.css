@@ -244,19 +244,17 @@ nav {
 .footer-block {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   width: 200px;
 }
 
 .footer-block .icons {
   display: flex;
-  /* justify-content: center; */
   width: 100%;
-  padding: 20px;
+  min-height: 50px;
 }
 
 .footer-block .icons img {
-  width: 20px;
+  width: 30px;
   height: auto;
   margin: 10px;
 }

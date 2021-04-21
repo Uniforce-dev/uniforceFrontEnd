@@ -133,6 +133,10 @@
   background: no-repeat bottom -20px center/30% url("../img/logo_neon.png"), rgba(0, 0, 0, 0.562);
 }
 
+.gamer-description p {  
+  padding-top: 10px;
+}
+
 .gamer-pseudo {
   font-weight: bold;
   font-size: 20px;

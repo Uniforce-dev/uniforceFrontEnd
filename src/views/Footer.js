@@ -16,18 +16,21 @@ class Footer extends Component {
                 <img
                   src={require("../assets/img/icon/twitter.svg")}
                   alt="logo twitter"
+                  title="Join us on Twitter"
                 />
               </a>
               <a href="https://instagram.com/tvuniforce" target="_blank">
                 <img
                   src={require("../assets/img/icon/instagram.svg")}
                   alt="logo instagram"
+                  title="Join us on Instagram"
                 />
               </a>
               <a href="https://discord.com/invite/ZQGEbP4" target="_blank">
                 <img
                   src={require("../assets/img/icon/discord.svg")}
                   alt="logo discord"
+                  title="Join us on Discord"
                 />
               </a>
             </div>
