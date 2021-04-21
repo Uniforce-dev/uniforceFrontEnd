@@ -39,6 +39,7 @@ class Home extends Component {
         channel: "uniforce_tv",
         theme: "dark",
         muted: true,
+        parent: 'uni-force.bzh',
         layout: this.state.isLive ? "video-with-chat" : "video",
       });
     });
