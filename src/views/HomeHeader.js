@@ -27,10 +27,10 @@ class HomeHeader extends Component {
               href="#id-youtube"
            
             >
-              REPLAY
+              BEST OF
             </a>
           </div>
-          <div>
+          {/* <div>
             <a
               className="nav-anchor"
               href="#id-news"
@@ -38,7 +38,7 @@ class HomeHeader extends Component {
             >
               NEWS
             </a>
-          </div>
+          </div> */}
           <div>
             <a
               className="nav-anchor"

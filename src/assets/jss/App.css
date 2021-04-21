@@ -162,7 +162,7 @@ nav {
 
 /* ******** SOCIAL NETWORKS ******** */
 
-.icons {
+.menu-icons {
   position: absolute;
   bottom: 10px;
   display: flex;
@@ -171,7 +171,7 @@ nav {
   padding: 30px;
 }
 
-.icons img {
+.menu-icons img {
   width: 20px;
   height: auto;
   margin: 10px;
@@ -240,6 +240,27 @@ nav {
 .footer-blocks p {
   padding: 20px;
 }
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 200px;
+}
+
+.footer-block .icons {
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+  padding: 20px;
+}
+
+.footer-block .icons img {
+  width: 20px;
+  height: auto;
+  margin: 10px;
+}
+
 
 /* ******** MEDIA QUERIES ******** */
 

@@ -25,7 +25,7 @@ class UniforcePresentation extends Component {
             <h2>Objectifs</h2>
             <p>
               Divertir, rassembler et partager notre passion du jeu
-              vidéo !
+              vidéo dans un esprit d'entraide et de solidarité!
             </p>
           </div>
           <div class="asso-values">

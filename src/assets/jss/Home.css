@@ -43,6 +43,7 @@
   border-radius: 2px;
   box-shadow: 1px 1px 1px black;
   transition: 0.25s;
+  white-space: nowrap;
 }
 
 .nav-anchor:hover {
